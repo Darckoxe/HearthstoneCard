@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Hearthstone Card</string>
+    <string name="app_name">Hearthstone Cards Research</string>
+    <color name="jaune_clair">#fce8b8</color>
 </resources>
