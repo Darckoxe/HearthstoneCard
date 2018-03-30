@@ -148,6 +148,8 @@ public class MainActivity extends AppCompatActivity {
                 String item = spinnerClasse.getSelectedItem().toString();
                 if(!item.equals("Search by class")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
+                    intent.putExtra("typeRequete", "class");
+                    intent.putExtra("requete", spinnerClasse.getSelectedItem().toString());
                     startActivity(intent);
                 }
             }
@@ -164,6 +166,8 @@ public class MainActivity extends AppCompatActivity {
                 String item = spinnerType.getSelectedItem().toString();
                 if(!item.equals("Search by type")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
+                    intent.putExtra("typeRequete", "type");
+                    intent.putExtra("requete", spinnerType.getSelectedItem().toString());
                     startActivity(intent);
                 }
             }
@@ -180,6 +184,8 @@ public class MainActivity extends AppCompatActivity {
                 String item = spinnerFaction.getSelectedItem().toString();
                 if(!item.equals("Search by faction")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
+                    intent.putExtra("typeRequete", "faction");
+                    intent.putExtra("requete", spinnerFaction.getSelectedItem().toString());
                     startActivity(intent);
                 }
             }
@@ -196,6 +202,8 @@ public class MainActivity extends AppCompatActivity {
                 String item = spinnerRace.getSelectedItem().toString();
                 if(!item.equals("Search by race")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
+                    intent.putExtra("typeRequete", "race");
+                    intent.putExtra("requete", spinnerRace.getSelectedItem().toString());
                     startActivity(intent);
                 }
             }
@@ -212,6 +220,8 @@ public class MainActivity extends AppCompatActivity {
                 String item = spinnerQualite.getSelectedItem().toString();
                 if(!item.equals("Search by quality")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
+                    intent.putExtra("requete", spinnerQualite.getSelectedItem().toString());
+                    intent.putExtra("typeRequete", "quality");
                     startActivity(intent);
                 }
             }
@@ -228,6 +238,8 @@ public class MainActivity extends AppCompatActivity {
                 String item = spinnerSet.getSelectedItem().toString();
                 if(!item.equals("Search by set")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
+                    intent.putExtra("typeRequete", "set");
+                    intent.putExtra("requete", spinnerSet.getSelectedItem().toString());
                     startActivity(intent);
                 }
             }
