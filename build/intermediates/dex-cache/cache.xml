@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/taco/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_462440e1ec9dfb9e0aa054ea84a6cca2bdcd3ac1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/taco/.android/build-cache/e9e6d17fa750f355535be2e9d8128c3378f4c8e2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="40392f30a601db5675cdf18192aab013d6fee6ec">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/pre-dexed/debug/classes_747e7876b74079393c2bbed74e05ccc6fbbbfb1a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/taco/.android/build-cache/a2b505d0b7ba9cfaadfcdc072bcf49671ba962ab/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6f4138a4e065826cb044d49faea4cfd7191773d1">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/pre-dexed/debug/classes_8bd3d25c232bdb914b314a9a693dad3f0c157c02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/taco/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/pre-dexed/debug/common-1.0.0_04878feeb685ab5d80b694a4598ee5b25055e87d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/taco/.android/build-cache/1d44352aaafd0a58f0dc2c69c0922fac222b88b6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f428e2fbc9ed0b297e3a3f420e51e6982f66822d">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/pre-dexed/debug/classes_f9d09f561885de10af10eb80e53a42ae2f97d1fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/taco/.android/build-cache/c46eacd77976a5835adb93807c3a091e7ce855aa/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/pre-dexed/debug/classes_596519fd8d96355e7b02216e61b2433cf8c9b6f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/taco/.android/build-cache/020828bbdcde89f08b880add78ea67db06ed8d3b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/pre-dexed/debug/classes_a9690dc8ee3a38f87dc605c281851141f7fa795a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/taco/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/pre-dexed/debug/support-annotations-26.1.0_0aa1dfce3f21d758564d0fb4961c74b25f4e12fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/taco/.android/build-cache/7aa8f72fff9d8c9f221e1e1f30a6621bbbf93480/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/pre-dexed/debug/classes_e6401b4a5145e04c35fb8cf4bde8178d0878f0ec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/taco/.android/build-cache/ba2666ff6abb814c54aa2d8306f1cf60efd5ba94/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/pre-dexed/debug/classes_3534ce0a46eef934762e802be5f4e1551443bf14.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7e321b5807dc55ded4b2a6a4c3ce56a3871a6a05/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/taco/.android/build-cache/62f5bf66b5f127c421ac0c444e321bb616673708/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/pre-dexed/debug/classes_df3c6e4f28bdcbd6bc18b81fe37085fa4497c372.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2c3eb3cb1dbd2deaca9c102c12f0f7aabeeb0f97">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4fd723574a8ff7432ac3133a67fbc9ffdd1b5ee4/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/taco/.android/build-cache/19b63f1d46767463ee4101255f5e66062af4f7c6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/pre-dexed/debug/classes_0daa61b6189b47a138a31b347b0a9d0b6b302baa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/taco/.android/build-cache/8f6ef534cfd6bdf268aa9a9f3ae233ebc0bfd445/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/pre-dexed/debug/classes_d5b841b0f70a8d9242a182542e6c084f9d2c4bd4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/taco/.android/build-cache/5b295ea36fe7958d219b97fffaeb6e036d1a50ed/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/pre-dexed/debug/classes_e1115e8263d60c9cdbbaa7b091b504809b875d46.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/taco/.android/build-cache/3efeba57bc947812082a2d746f34229982afa637/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/pre-dexed/debug/classes_1d446d2927ae67bd9fe2c9ede4ec261ff6e99dfc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/taco/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/pre-dexed/debug/common-1.0.0_db5681e666e65c18012390b574aac8c35f4b7dd8.jar" />
+    </item>
+
+</items>
