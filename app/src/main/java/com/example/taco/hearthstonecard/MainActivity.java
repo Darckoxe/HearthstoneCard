@@ -59,6 +59,14 @@ public class MainActivity extends AppCompatActivity {
                     ArrayList<String> listeQualite = new ArrayList<>();
                     ArrayList<String> listeSet = new ArrayList<>();
 
+                    listeClasse.add("Search by class");
+                    listeType.add("Search by type");
+                    listeFaction.add("Search by faction");
+                    listeRace.add("Search by race");
+                    listeQualite.add("Search by quality");
+                    listeSet.add("Search by set");
+
+
                     if(classe != null){
                         for (int i=0;i<classe.length();i++){
                             listeClasse.add((String) classe.get(i));
