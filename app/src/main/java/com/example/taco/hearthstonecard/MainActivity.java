@@ -158,11 +158,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        spinnerClasse.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spinnerType.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                String item = spinnerClasse.getSelectedItem().toString();
-                if(!item.equals("Search by class")){
+                String item = spinnerType.getSelectedItem().toString();
+                if(!item.equals("Search by type")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     startActivity(intent);
                 }
@@ -174,11 +174,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        spinnerClasse.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spinnerFaction.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                String item = spinnerClasse.getSelectedItem().toString();
-                if(!item.equals("Search by class")){
+                String item = spinnerFaction.getSelectedItem().toString();
+                if(!item.equals("Search by faction")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     startActivity(intent);
                 }
@@ -190,11 +190,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        spinnerClasse.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spinnerRace.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                String item = spinnerClasse.getSelectedItem().toString();
-                if(!item.equals("Search by class")){
+                String item = spinnerRace.getSelectedItem().toString();
+                if(!item.equals("Search by race")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     startActivity(intent);
                 }
@@ -206,11 +206,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        spinnerClasse.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spinnerQualite.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                String item = spinnerClasse.getSelectedItem().toString();
-                if(!item.equals("Search by class")){
+                String item = spinnerQualite.getSelectedItem().toString();
+                if(!item.equals("Search by quality")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     startActivity(intent);
                 }
@@ -222,11 +222,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        spinnerClasse.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spinnerSet.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                String item = spinnerClasse.getSelectedItem().toString();
-                if(!item.equals("Search by class")){
+                String item = spinnerSet.getSelectedItem().toString();
+                if(!item.equals("Search by set")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     startActivity(intent);
                 }
