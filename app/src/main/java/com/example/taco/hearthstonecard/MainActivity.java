@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -61,12 +63,12 @@ public class MainActivity extends AppCompatActivity {
                     ArrayList<String> listeQualite = new ArrayList<>();
                     ArrayList<String> listeSet = new ArrayList<>();
 
-                    listeClasse.add("Search by class");
-                    listeType.add("Search by type");
-                    listeFaction.add("Search by faction");
-                    listeRace.add("Search by race");
-                    listeQualite.add("Search by quality");
-                    listeSet.add("Search by set");
+                    listeClasse.add("Recherche par classe");
+                    listeType.add("Recherche par type");
+                    listeFaction.add("Recherche par faction");
+                    listeRace.add("Recherche par race");
+                    listeQualite.add("Recherche par qualité");
+                    listeSet.add("Recherche par extension");
 
 
                     if(classe != null){
@@ -146,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String item = spinnerClasse.getSelectedItem().toString();
-                if(!item.equals("Search by class")){
+                if(!item.equals("Recherche par classe")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "classes");
                     intent.putExtra("requete", spinnerClasse.getSelectedItem().toString());
@@ -165,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String item = spinnerType.getSelectedItem().toString();
-                if(!item.equals("Search by type")){
+                if(!item.equals("Recherche par type")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "types");
                     intent.putExtra("requete", spinnerType.getSelectedItem().toString());
@@ -184,7 +186,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String item = spinnerFaction.getSelectedItem().toString();
-                if(!item.equals("Search by faction")){
+                if(!item.equals("Recherche par faction")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "factions");
                     intent.putExtra("requete", spinnerFaction.getSelectedItem().toString());
@@ -203,7 +205,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String item = spinnerRace.getSelectedItem().toString();
-                if(!item.equals("Search by race")){
+                if(!item.equals("Recherche par race")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "races");
                     intent.putExtra("requete", spinnerRace.getSelectedItem().toString());
@@ -222,7 +224,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String item = spinnerQualite.getSelectedItem().toString();
-                if(!item.equals("Search by quality")){
+                if(!item.equals("Recherche par qualité")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("requete", spinnerQualite.getSelectedItem().toString());
                     intent.putExtra("typeRequete", "qualities");
@@ -241,7 +243,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String item = spinnerSet.getSelectedItem().toString();
-                if(!item.equals("Search by set")){
+                if(!item.equals("Recherche par extension")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "sets");
                     intent.putExtra("requete", spinnerSet.getSelectedItem().toString());
@@ -253,6 +255,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
 
+            }
+        });
+
+        final Button rechercheNom = (Button) findViewById(R.id.buttonRechercheNom);
+        final EditText texteRechercheNom = (EditText) findViewById(R.id.editTextRechercheNom);
+
+        rechercheNom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!texteRechercheNom.getText().toString().matches("")) {
+                    Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
+                    intent.putExtra("typeRequete", "search");
+                    intent.putExtra("requete", texteRechercheNom.getText().toString());
+                    startActivity(intent);
+                }
             }
         });
     }

@@ -43,7 +43,7 @@ public class CardListActivity extends AppCompatActivity {
         String requete = mainIntent.getStringExtra("requete");
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         String url = "https://omgvamp-hearthstone-v1.p.mashape.com/cards/";
-        url+=typeRequete+"/"+requete;
+        url+=typeRequete+"/"+requete+"?locale=frFR";
         JsonArrayRequest requeteInfos = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
