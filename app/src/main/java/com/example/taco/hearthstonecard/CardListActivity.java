@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -32,6 +33,7 @@ import java.util.Map;
 public class CardListActivity extends AppCompatActivity {
     private ListView listeCard;
     private List<String> data = new ArrayList<>();
+    private List<JSONObject> donneesCartes = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,11 +52,20 @@ public class CardListActivity extends AppCompatActivity {
                 try {
                     for (int i =0;i<response.length();i++){
                         JSONObject donnees = response.getJSONObject(i);
+                        donneesCartes.add(donnees);
                         data.add(donnees.getString("name"));
                     }
                     listeCard = (ListView) findViewById(R.id.listeCard);
                     ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1, data);
                     listeCard.setAdapter(adapter);
+                    listeCard.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                        @Override
+                        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                            Intent intentVoirCarte = new Intent(getApplicationContext(), CardViewActivity.class);
+                            intentVoirCarte.putExtra("donnees", donneesCartes.get(i).toString());
+                            startActivity(intentVoirCarte);
+                        }
+                    });
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -62,9 +73,9 @@ public class CardListActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.i("-----E-----", error.getMessage());
-                Toast errorToast = Toast.makeText(getApplicationContext(), "Erreur de chargement des données.", Toast.LENGTH_SHORT);
+                Toast errorToast = Toast.makeText(getApplicationContext(), "Les cartes que vous avez demandé n'existent pas", Toast.LENGTH_SHORT);
                 errorToast.show();
+                finish();
             }
         }) {
             @Override

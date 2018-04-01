@@ -268,6 +268,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "search");
                     intent.putExtra("requete", texteRechercheNom.getText().toString());
+                    texteRechercheNom.setText("");
                     startActivity(intent);
                 }
             }
