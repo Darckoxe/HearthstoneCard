@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\darkn\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\darkn\AndroidStudioProjects\HearthstoneCard\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_0f79406ecca7a7bba0f04e620d65950dd70d1beb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\darkn\AndroidStudioProjects\HearthstoneCard\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -16,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="d1dd779428acd91d028d33233f6d2c608c4b24ad">
+        sha1="6dc5416f8f9488f56c07dbfe6c852efb2eb83a5e">
         <dex dex="C:\Users\darkn\AndroidStudioProjects\HearthstoneCard\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_5b7283c4d2ab0bc73afe9e7f2388560b81dff1f6\classes.dex" />
     </item>
 
