@@ -187,13 +187,14 @@ public class CardViewActivity extends AppCompatActivity {
             }
 
             if (text != null) {
-                text = text.replace("\\n", " ");
+                text = text.replace("\\n", "\n");
                 text = text.replace("_", " ");
                 textViewTexte.setText(Html.fromHtml(text, 0, null, null));
             }
 
             if (flavor != null) {
                 flavor = flavor.replace("_", " ");
+                flavor = flavor.replace("\\n", "\n");
                 textViewAmbiance.setText(flavor);
             }
         } catch (JSONException e) {
