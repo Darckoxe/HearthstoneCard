@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -100,6 +102,15 @@ public class CardViewActivity extends AppCompatActivity {
         final TextView textViewType = (TextView) findViewById(R.id.typeCarte);
         final TextView textViewCarac = (TextView) findViewById(R.id.caracCarte);
         final TextView textViewTexte = (TextView) findViewById(R.id.texteCarte);
+        final TextView textViewAmbiance = (TextView) findViewById(R.id.ambianceCarte);
+        final Button buttonRetour = (Button) findViewById(R.id.retour);
+
+        buttonRetour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         try {
             JSONObject donneesCarte = new JSONObject(jsonData);
@@ -114,6 +125,7 @@ public class CardViewActivity extends AppCompatActivity {
             String attack = donneesCarte.optString("attack", null);
             String health = donneesCarte.optString("health", null);
             String text = donneesCarte.optString("text", null);
+            String flavor = donneesCarte.optString("flavor", null);
             String race = donneesCarte.optString("race", null);
             String durability = donneesCarte.optString("durability", null);
 
@@ -178,6 +190,11 @@ public class CardViewActivity extends AppCompatActivity {
                 text = text.replace("\\n", " ");
                 text = text.replace("_", " ");
                 textViewTexte.setText(Html.fromHtml(text, 0, null, null));
+            }
+
+            if (flavor != null) {
+                flavor = flavor.replace("_", " ");
+                textViewAmbiance.setText(flavor);
             }
         } catch (JSONException e) {
             Toast erreur = Toast.makeText(getApplicationContext(), "Erreur avec les données de cette carte", Toast.LENGTH_SHORT);
