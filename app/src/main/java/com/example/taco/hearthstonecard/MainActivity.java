@@ -31,18 +31,86 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Map<String, String> trad = new HashMap<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
+
+        //initialisation des traductions
+        //types
+        trad.put("Sort", "Spell");
+        trad.put("Héros", "Hero");
+        trad.put("Serviteur", "Minion");
+        trad.put("Enchantement", "Enchantment");
+        trad.put("Arme", "Weapon");
+        trad.put("Pouvoir héroïque", "Hero Power");
+        //races
+        trad.put("Dragon","Dragon");
+        trad.put("Démon","Demon");
+        trad.put("Élémentaire","Elemental");
+        trad.put("Méca","Mech");
+        trad.put("Murloc","Murloc");
+        trad.put("Bête","Beast");
+        trad.put("Pirate","Pirate");
+        trad.put("Totem","Totem");
+        //sets
+        trad.put("Basique","Basic");
+        trad.put("Classique","Classic");
+        trad.put("Promo","Promo");
+        trad.put("Panthéon","Hall of Fame");
+        trad.put("Naxxramas","Naxxramas");
+        trad.put("Gobelins et Gnomes","Goblins vs Gnomes");
+        trad.put("Mont Rochenoire","Blackrock Mountain");
+        trad.put("Le Grand Tournoi","The Grand Tournament");
+        trad.put("La Ligue des explorateurs","The League of Explorers");
+        trad.put("Murmures des Dieux très anciens","Whispers of the Old Gods");
+        trad.put("Une nuit à Karazhan","One Night in Karazhan");
+        trad.put("Main basse sur Gadgetzan","Mean Streets of Gadgetzan");
+        trad.put("Voyage au centre d’Un’Goro","Journey to Un'Goro");
+        trad.put("Chevaliers du Trône de glace","Knights of the Frozen Throne");
+        trad.put("Kobolds et Catacombes","Kobolds & Catacombs");
+        trad.put("Le Bois maudit","The Witchwood");
+        trad.put("Bras de Fer","Tavern Brawl");
+        trad.put("Hero Skins","Hero Skins");
+        trad.put("Missions","Missions");
+        trad.put("Credits","Credits");
+        trad.put("System","System");
+        trad.put("Debug","Debug");
+        //factions
+        trad.put("Alliance","Alliance");
+        trad.put("Horde","Horde");
+        trad.put("Neutral","Neutral");
+        //qualités
+        trad.put("Gratuit", "Free");
+        trad.put("Commune", "Common");
+        trad.put("Rare", "Rare");
+        trad.put("Épique", "Epic");
+        trad.put("Légendaire", "Legendary");
+        //classes
+        trad.put("Chevalier de la mort","Death Knight");
+        trad.put("Druide","Druid");
+        trad.put("Chasseur","Hunter");
+        trad.put("Mage","Mage");
+        trad.put("Paladin","Paladin");
+        trad.put("Prêtre","Priest");
+        trad.put("Voleur","Rogue");
+        trad.put("Chaman","Shaman");
+        trad.put("Démoniste","Warlock");
+        trad.put("Guerrier","Warrior");
+        trad.put("Dream","Dream");
+        trad.put("Neutre","Neutral");
+
+
         final Spinner spinnerClasse = (Spinner) findViewById(R.id.spinnerClasse);
         final Spinner spinnerType = (Spinner) findViewById(R.id.spinnerType);
         final Spinner spinnerFaction = (Spinner) findViewById(R.id.spinnerFaction);
         final Spinner spinnerRace = (Spinner) findViewById(R.id.spinnerRace);
         final Spinner spinnerQualite = (Spinner) findViewById(R.id.spinnerQualite);
         final Spinner spinnerSet = (Spinner) findViewById(R.id.spinnerSet);
-        String url = "https://omgvamp-hearthstone-v1.p.mashape.com/info";
+        String url = "https://omgvamp-hearthstone-v1.p.mashape.com/info?locale=frFR";
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         JsonObjectRequest requeteInfos = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
@@ -151,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
                 if(!item.equals("Recherche par classe")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "classes");
-                    intent.putExtra("requete", spinnerClasse.getSelectedItem().toString());
+                    intent.putExtra("requete", trad.get(spinnerClasse.getSelectedItem().toString()));
                     spinnerClasse.setSelection(0);
                     startActivity(intent);
                 }
@@ -170,7 +238,7 @@ public class MainActivity extends AppCompatActivity {
                 if(!item.equals("Recherche par type")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "types");
-                    intent.putExtra("requete", spinnerType.getSelectedItem().toString());
+                    intent.putExtra("requete", trad.get(spinnerType.getSelectedItem().toString()));
                     spinnerType.setSelection(0);
                     startActivity(intent);
                 }
@@ -189,7 +257,7 @@ public class MainActivity extends AppCompatActivity {
                 if(!item.equals("Recherche par faction")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "factions");
-                    intent.putExtra("requete", spinnerFaction.getSelectedItem().toString());
+                    intent.putExtra("requete", trad.get(spinnerFaction.getSelectedItem().toString()));
                     spinnerFaction.setSelection(0);
                     startActivity(intent);
                 }
@@ -208,7 +276,7 @@ public class MainActivity extends AppCompatActivity {
                 if(!item.equals("Recherche par race")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "races");
-                    intent.putExtra("requete", spinnerRace.getSelectedItem().toString());
+                    intent.putExtra("requete", trad.get(spinnerRace.getSelectedItem().toString()));
                     spinnerRace.setSelection(0);
                     startActivity(intent);
                 }
@@ -226,7 +294,7 @@ public class MainActivity extends AppCompatActivity {
                 String item = spinnerQualite.getSelectedItem().toString();
                 if(!item.equals("Recherche par qualité")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
-                    intent.putExtra("requete", spinnerQualite.getSelectedItem().toString());
+                    intent.putExtra("requete", trad.get(spinnerQualite.getSelectedItem().toString()));
                     intent.putExtra("typeRequete", "qualities");
                     spinnerQualite.setSelection(0);
                     startActivity(intent);
@@ -246,7 +314,7 @@ public class MainActivity extends AppCompatActivity {
                 if(!item.equals("Recherche par extension")){
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "sets");
-                    intent.putExtra("requete", spinnerSet.getSelectedItem().toString());
+                    intent.putExtra("requete", trad.get(spinnerSet.getSelectedItem().toString()));
                     spinnerSet.setSelection(0);
                     startActivity(intent);
                 }

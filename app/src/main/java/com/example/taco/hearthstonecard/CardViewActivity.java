@@ -45,7 +45,7 @@ public class CardViewActivity extends AppCompatActivity {
         }
     };
 
-    Map<String, String> trad = new HashMap<>();
+    private Map<String, String> trad = new HashMap<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
