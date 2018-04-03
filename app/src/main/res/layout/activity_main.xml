@@ -42,7 +42,7 @@
                 android:layout_marginTop="212dp"
                 android:text="Classe"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/holo_orange_light"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.039"
                 app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +52,7 @@
                 android:id="@+id/buttonRechercheNom"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="110dp"
-                android:layout_height="40dp"
+                android:layout_height="42dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="4dp"
@@ -84,7 +84,7 @@
                 android:layout_marginTop="338dp"
                 android:text="Race"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/holo_orange_light"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -97,7 +97,7 @@
                 android:layout_marginTop="254dp"
                 android:text="Type"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/holo_orange_light"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.003"
                 app:layout_constraintStart_toStartOf="parent"
@@ -155,7 +155,7 @@
                 android:layout_marginTop="296dp"
                 android:text="Faction"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/holo_orange_light"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -179,7 +179,7 @@
                 android:layout_marginTop="382dp"
                 android:text="Qualité"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/holo_orange_light"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -205,7 +205,7 @@
                 android:layout_marginTop="430dp"
                 android:text="Ensemble"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/holo_orange_light"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -262,7 +262,7 @@
                 android:layout_marginTop="8dp"
                 android:buttonTint="@android:color/holo_orange_light"
                 android:text="Cartes collectionnables uniquement"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/holo_orange_light"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />

@@ -1,16 +1,21 @@
 package com.example.taco.hearthstonecard;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -174,13 +179,60 @@ public class MainActivity extends AppCompatActivity {
                             listeSet.add((String) set.get(i));
                         }
                     }
-                    ArrayAdapter<String> adaptClasse = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, listeClasse);
-                    ArrayAdapter<String> adaptType = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, listeType);
-                    ArrayAdapter<String> adaptFaction = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, listeFaction);
-                    ArrayAdapter<String> adaptRace = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, listeRace);
-                    ArrayAdapter<String> adaptQualite = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, listeQualite);
-                    ArrayAdapter<String> adaptSet = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, listeSet);
-
+                    ArrayAdapter<String> adaptClasse = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, listeClasse) {
+                        @NonNull
+                        @Override
+                        public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+                            TextView v = (TextView) super.getView(position, convertView, parent);
+                            v.setTextColor(Color.parseColor("#ffffff"));
+                            return v;
+                        }
+                    };
+                    ArrayAdapter<String> adaptType = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, listeType) {
+                        @NonNull
+                        @Override
+                        public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+                            TextView v = (TextView) super.getView(position, convertView, parent);
+                            v.setTextColor(Color.parseColor("#ffffff"));
+                            return v;
+                        }
+                    };
+                    ArrayAdapter<String> adaptFaction = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, listeFaction) {
+                        @NonNull
+                        @Override
+                        public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+                            TextView v = (TextView) super.getView(position, convertView, parent);
+                            v.setTextColor(Color.parseColor("#ffffff"));
+                            return v;
+                        }
+                    };
+                    ArrayAdapter<String> adaptRace = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, listeRace) {
+                        @NonNull
+                        @Override
+                        public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+                            TextView v = (TextView) super.getView(position, convertView, parent);
+                            v.setTextColor(Color.parseColor("#ffffff"));
+                            return v;
+                        }
+                    };
+                    ArrayAdapter<String> adaptQualite = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, listeQualite) {
+                        @NonNull
+                        @Override
+                        public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+                            TextView v = (TextView) super.getView(position, convertView, parent);
+                            v.setTextColor(Color.parseColor("#ffffff"));
+                            return v;
+                        }
+                    };
+                    ArrayAdapter<String> adaptSet = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, listeSet) {
+                        @NonNull
+                        @Override
+                        public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+                            TextView v = (TextView) super.getView(position, convertView, parent);
+                            v.setTextColor(Color.parseColor("#ffffff"));
+                            return v;
+                        }
+                    };
 
                     spinnerClasse.setAdapter(adaptClasse);
                     spinnerType.setAdapter(adaptType);
