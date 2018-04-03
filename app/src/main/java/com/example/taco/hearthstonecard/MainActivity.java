@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -110,7 +111,15 @@ public class MainActivity extends AppCompatActivity {
         final Spinner spinnerRace = (Spinner) findViewById(R.id.spinnerRace);
         final Spinner spinnerQualite = (Spinner) findViewById(R.id.spinnerQualite);
         final Spinner spinnerSet = (Spinner) findViewById(R.id.spinnerSet);
+
+        final CheckBox checkBox = (CheckBox) findViewById(R.id.checkCollectionnable);
         String url = "https://omgvamp-hearthstone-v1.p.mashape.com/info?locale=frFR";
+        final int collec;
+        if (checkBox.isChecked()) {
+            collec = 1;
+        } else {
+            collec = 0;
+        }
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         JsonObjectRequest requeteInfos = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
@@ -220,6 +229,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "classes");
                     intent.putExtra("requete", trad.get(spinnerClasse.getSelectedItem().toString()));
+                    intent.putExtra("collec", collec);
                     spinnerClasse.setSelection(0);
                     startActivity(intent);
                 }
@@ -239,6 +249,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "types");
                     intent.putExtra("requete", trad.get(spinnerType.getSelectedItem().toString()));
+                    intent.putExtra("collec", collec);
                     spinnerType.setSelection(0);
                     startActivity(intent);
                 }
@@ -258,6 +269,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "factions");
                     intent.putExtra("requete", trad.get(spinnerFaction.getSelectedItem().toString()));
+                    intent.putExtra("collec", collec);
                     spinnerFaction.setSelection(0);
                     startActivity(intent);
                 }
@@ -277,6 +289,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "races");
                     intent.putExtra("requete", trad.get(spinnerRace.getSelectedItem().toString()));
+                    intent.putExtra("collec", collec);
                     spinnerRace.setSelection(0);
                     startActivity(intent);
                 }
@@ -296,6 +309,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("requete", trad.get(spinnerQualite.getSelectedItem().toString()));
                     intent.putExtra("typeRequete", "qualities");
+                    intent.putExtra("collec", collec);
                     spinnerQualite.setSelection(0);
                     startActivity(intent);
                 }
@@ -315,6 +329,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "sets");
                     intent.putExtra("requete", trad.get(spinnerSet.getSelectedItem().toString()));
+                    intent.putExtra("collec", collec);
                     spinnerSet.setSelection(0);
                     startActivity(intent);
                 }
@@ -336,6 +351,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "search");
                     intent.putExtra("requete", texteRechercheNom.getText().toString());
+                    intent.putExtra("collec", collec);
                     texteRechercheNom.setText("");
                     startActivity(intent);
                 }

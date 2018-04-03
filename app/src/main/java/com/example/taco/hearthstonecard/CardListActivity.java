@@ -94,6 +94,9 @@ public class CardListActivity extends AppCompatActivity {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         String url = "https://omgvamp-hearthstone-v1.p.mashape.com/cards/";
         url+=typeRequete+"/"+requete+"?locale=frFR";
+        if (mainIntent.getIntExtra("collec", 0) == 1) {
+            url+="&collectible=1";
+        }
         JsonArrayRequest requeteInfos = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
