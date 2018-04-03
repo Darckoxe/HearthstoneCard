@@ -195,7 +195,7 @@ public class CardViewActivity extends AppCompatActivity {
             if (flavor != null) {
                 flavor = flavor.replace("_", " ");
                 flavor = flavor.replace("\\n", "\n");
-                textViewAmbiance.setText(flavor);
+                textViewAmbiance.setText(Html.fromHtml(flavor, 0, null, null));
             }
         } catch (JSONException e) {
             Toast erreur = Toast.makeText(getApplicationContext(), "Erreur avec les données de cette carte", Toast.LENGTH_SHORT);
