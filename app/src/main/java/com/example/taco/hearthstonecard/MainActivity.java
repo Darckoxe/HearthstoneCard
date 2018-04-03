@@ -114,12 +114,8 @@ public class MainActivity extends AppCompatActivity {
 
         final CheckBox checkBox = (CheckBox) findViewById(R.id.checkCollectionnable);
         String url = "https://omgvamp-hearthstone-v1.p.mashape.com/info?locale=frFR";
-        final int collec;
-        if (checkBox.isChecked()) {
-            collec = 1;
-        } else {
-            collec = 0;
-        }
+        final int[] collec = new int[1];
+
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         JsonObjectRequest requeteInfos = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
@@ -226,10 +222,15 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String item = spinnerClasse.getSelectedItem().toString();
                 if(!item.equals("Recherche par classe")){
+                    if (checkBox.isChecked()) {
+                        collec[0] = 1;
+                    } else {
+                        collec[0] = 0;
+                    }
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "classes");
                     intent.putExtra("requete", trad.get(spinnerClasse.getSelectedItem().toString()));
-                    intent.putExtra("collec", collec);
+                    intent.putExtra("collec", collec[0]);
                     spinnerClasse.setSelection(0);
                     startActivity(intent);
                 }
@@ -246,10 +247,15 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String item = spinnerType.getSelectedItem().toString();
                 if(!item.equals("Recherche par type")){
+                    if (checkBox.isChecked()) {
+                        collec[0] = 1;
+                    } else {
+                        collec[0] = 0;
+                    }
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "types");
                     intent.putExtra("requete", trad.get(spinnerType.getSelectedItem().toString()));
-                    intent.putExtra("collec", collec);
+                    intent.putExtra("collec", collec[0]);
                     spinnerType.setSelection(0);
                     startActivity(intent);
                 }
@@ -266,10 +272,15 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String item = spinnerFaction.getSelectedItem().toString();
                 if(!item.equals("Recherche par faction")){
+                    if (checkBox.isChecked()) {
+                        collec[0] = 1;
+                    } else {
+                        collec[0] = 0;
+                    }
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "factions");
                     intent.putExtra("requete", trad.get(spinnerFaction.getSelectedItem().toString()));
-                    intent.putExtra("collec", collec);
+                    intent.putExtra("collec", collec[0]);
                     spinnerFaction.setSelection(0);
                     startActivity(intent);
                 }
@@ -286,10 +297,15 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String item = spinnerRace.getSelectedItem().toString();
                 if(!item.equals("Recherche par race")){
+                    if (checkBox.isChecked()) {
+                        collec[0] = 1;
+                    } else {
+                        collec[0] = 0;
+                    }
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "races");
                     intent.putExtra("requete", trad.get(spinnerRace.getSelectedItem().toString()));
-                    intent.putExtra("collec", collec);
+                    intent.putExtra("collec", collec[0]);
                     spinnerRace.setSelection(0);
                     startActivity(intent);
                 }
@@ -306,10 +322,15 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String item = spinnerQualite.getSelectedItem().toString();
                 if(!item.equals("Recherche par qualité")){
+                    if (checkBox.isChecked()) {
+                        collec[0] = 1;
+                    } else {
+                        collec[0] = 0;
+                    }
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("requete", trad.get(spinnerQualite.getSelectedItem().toString()));
                     intent.putExtra("typeRequete", "qualities");
-                    intent.putExtra("collec", collec);
+                    intent.putExtra("collec", collec[0]);
                     spinnerQualite.setSelection(0);
                     startActivity(intent);
                 }
@@ -326,10 +347,15 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String item = spinnerSet.getSelectedItem().toString();
                 if(!item.equals("Recherche par extension")){
+                    if (checkBox.isChecked()) {
+                        collec[0] = 1;
+                    } else {
+                        collec[0] = 0;
+                    }
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "sets");
                     intent.putExtra("requete", trad.get(spinnerSet.getSelectedItem().toString()));
-                    intent.putExtra("collec", collec);
+                    intent.putExtra("collec", collec[0]);
                     spinnerSet.setSelection(0);
                     startActivity(intent);
                 }
@@ -348,10 +374,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (!texteRechercheNom.getText().toString().matches("")) {
+                    if (checkBox.isChecked()) {
+                        collec[0] = 1;
+                    } else {
+                        collec[0] = 0;
+                    }
                     Intent intent = new Intent(getApplicationContext(), CardListActivity.class);
                     intent.putExtra("typeRequete", "search");
                     intent.putExtra("requete", texteRechercheNom.getText().toString());
-                    intent.putExtra("collec", collec);
+                    intent.putExtra("collec", collec[0]);
                     texteRechercheNom.setText("");
                     startActivity(intent);
                 }

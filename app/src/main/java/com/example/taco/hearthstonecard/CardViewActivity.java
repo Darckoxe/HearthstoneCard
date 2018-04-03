@@ -105,6 +105,8 @@ public class CardViewActivity extends AppCompatActivity {
         final TextView textViewAmbiance = (TextView) findViewById(R.id.ambianceCarte);
         final Button buttonRetour = (Button) findViewById(R.id.retour);
 
+        final boolean[] apercuDore = {false};
+
         buttonRetour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -115,7 +117,7 @@ public class CardViewActivity extends AppCompatActivity {
         try {
             JSONObject donneesCarte = new JSONObject(jsonData);
 
-            String imageCarte = donneesCarte.optString("img", null);
+            final String imageCarte = donneesCarte.optString("img", null);
             String nomCarte = donneesCarte.optString("name", null);
             String rarity = donneesCarte.optString("rarity", null);
             String type = donneesCarte.optString("type", null);
@@ -128,8 +130,27 @@ public class CardViewActivity extends AppCompatActivity {
             String flavor = donneesCarte.optString("flavor", null);
             String race = donneesCarte.optString("race", null);
             String durability = donneesCarte.optString("durability", null);
+            final String imgGold = donneesCarte.optString("imgGold", null);
 
             Picasso.with(getApplicationContext()).load(imageCarte).placeholder(R.drawable.carte_chargement).error(R.drawable.carte_inconnue).into(imageViewImageCarte);
+
+            imageViewImageCarte.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (imgGold != null) {
+                        if (apercuDore[0]) {
+                            Picasso.with(getApplicationContext()).load(imageCarte).placeholder(R.drawable.carte_chargement).error(R.drawable.carte_inconnue).into(imageViewImageCarte);
+                            apercuDore[0] = false;
+                        } else {
+                            Picasso.with(getApplicationContext()).load(imgGold).placeholder(R.drawable.carte_chargement_gold).error(R.drawable.carte_inconnue_gold).into(imageViewImageCarte);
+                            apercuDore[0] = true;
+                        }
+                    } else {
+                        Toast erreurPasDeGold = Toast.makeText(getApplicationContext(), "Pas d'aperçu doré disponible !", Toast.LENGTH_SHORT);
+                        erreurPasDeGold.show();
+                    }
+                }
+            });
 
             if (nomCarte != null) {
                 textViewTitreCarte.setText(nomCarte);
