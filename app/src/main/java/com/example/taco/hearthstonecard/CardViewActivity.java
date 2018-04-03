@@ -132,7 +132,11 @@ public class CardViewActivity extends AppCompatActivity {
             String durability = donneesCarte.optString("durability", null);
             final String imgGold = donneesCarte.optString("imgGold", null);
 
-            Picasso.with(getApplicationContext()).load(imageCarte).placeholder(R.drawable.carte_chargement).error(R.drawable.carte_inconnue).into(imageViewImageCarte);
+            if (imageCarte != null) {
+                Picasso.with(getApplicationContext()).load(imageCarte).placeholder(R.drawable.carte_chargement).error(R.drawable.carte_inconnue).into(imageViewImageCarte);
+            } else {
+                Picasso.with(getApplicationContext()).load(R.drawable.carte_inconnue).into(imageViewImageCarte);
+            }
 
             imageViewImageCarte.setOnClickListener(new View.OnClickListener() {
                 @Override
