@@ -3,30 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\darkn\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="C:\Users\darkn\AndroidStudioProjects\HearthstoneCard\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_0f79406ecca7a7bba0f04e620d65950dd70d1beb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\darkn\AndroidStudioProjects\HearthstoneCard\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\darkn\AndroidStudioProjects\HearthstoneCard\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_9450e93b91adb3716dd99acac8ea1ff4872e72f3\classes.dex" />
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7e321b5807dc55ded4b2a6a4c3ce56a3871a6a05/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\darkn\AndroidStudioProjects\HearthstoneCard\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="a84fe0ab7fc1664aa5f229d635e96d48919e737e">
-        <dex dex="C:\Users\darkn\AndroidStudioProjects\HearthstoneCard\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_5b7283c4d2ab0bc73afe9e7f2388560b81dff1f6\classes.dex" />
+        sha1="1a1f6c8b09b2bddd97adca43f09c37cabc0d8305">
+        <dex dex="/home/taco/AndroidStudioProjects/HearthstoneCard/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4fd723574a8ff7432ac3133a67fbc9ffdd1b5ee4/classes.dex" />
     </item>
 
 </items>

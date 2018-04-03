@@ -25,11 +25,11 @@
                 android:layout_height="23dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="252dp"
+                android:layout_marginTop="272dp"
                 android:backgroundTint="@android:color/white"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.851"
+                app:layout_constraintHorizontal_bias="0.86"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,12 +39,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="212dp"
+                android:layout_marginTop="228dp"
                 android:text="Classe"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textColor="@android:color/holo_orange_light"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.039"
+                app:layout_constraintHorizontal_bias="0.034"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,11 +68,11 @@
                 android:layout_height="23dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="336dp"
+                android:layout_marginTop="356dp"
                 android:backgroundTint="@android:color/white"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.851"
+                app:layout_constraintHorizontal_bias="0.854"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -81,7 +81,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="28dp"
-                android:layout_marginTop="338dp"
+                android:layout_marginTop="356dp"
                 android:text="Race"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textColor="@android:color/holo_orange_light"
@@ -92,14 +92,11 @@
                 android:id="@+id/textType"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
                 android:layout_marginStart="28dp"
-                android:layout_marginTop="254dp"
+                android:layout_marginTop="276dp"
                 android:text="Type"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textColor="@android:color/holo_orange_light"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.003"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -109,11 +106,11 @@
                 android:layout_height="23dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="210dp"
+                android:layout_marginTop="224dp"
                 android:backgroundTint="@android:color/white"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.851"
+                app:layout_constraintHorizontal_bias="0.86"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -123,11 +120,11 @@
                 android:layout_height="23dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="294dp"
+                android:layout_marginTop="316dp"
                 android:backgroundTint="@android:color/white"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.851"
+                app:layout_constraintHorizontal_bias="0.854"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -152,7 +149,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="28dp"
-                android:layout_marginTop="296dp"
+                android:layout_marginTop="316dp"
                 android:text="Faction"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textColor="@android:color/holo_orange_light"
@@ -176,7 +173,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="28dp"
-                android:layout_marginTop="382dp"
+                android:layout_marginTop="404dp"
                 android:text="Qualité"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textColor="@android:color/holo_orange_light"
@@ -189,11 +186,11 @@
                 android:layout_height="23dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="428dp"
+                android:layout_marginTop="452dp"
                 android:backgroundTint="@android:color/white"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.851"
+                app:layout_constraintHorizontal_bias="0.854"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -202,7 +199,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="28dp"
-                android:layout_marginTop="430dp"
+                android:layout_marginTop="452dp"
                 android:text="Ensemble"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textColor="@android:color/holo_orange_light"
@@ -215,11 +212,11 @@
                 android:layout_height="23dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="380dp"
+                android:layout_marginTop="400dp"
                 android:backgroundTint="@android:color/white"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.851"
+                app:layout_constraintHorizontal_bias="0.854"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -237,21 +234,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/buttonRechercheNom" />
-
-            <TextView
-                android:id="@+id/createurs"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="32dp"
-                android:text="Par Simon Jaunet\net Alexandre Taconnet"
-                android:textAlignment="center"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:textColor="@android:color/white"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spinnerSet" />
 
             <CheckBox
                 android:id="@+id/checkCollectionnable"

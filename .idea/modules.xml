@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HearthstoneCard.iml" filepath="$PROJECT_DIR$/HearthstoneCard.iml" />
-      <module fileurl="file://C:\Users\darkn\AndroidStudioProjects\projetHearthstone\HearthstoneCard.iml" filepath="C:\Users\darkn\AndroidStudioProjects\projetHearthstone\HearthstoneCard.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\darkn\AndroidStudioProjects\HearthstoneCard\projetHearthstone.iml" filepath="C:\Users\darkn\AndroidStudioProjects\HearthstoneCard\projetHearthstone.iml" />
     </modules>
   </component>
 </project>
